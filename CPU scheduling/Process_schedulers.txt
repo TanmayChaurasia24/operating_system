@@ -1,0 +1,48 @@
+Process Schedulers in Operating System:
+
+Process schedulers are fundamental components of operating systems responsible for deciding the order in which processes are executed by the CPU.
+
+-------------------------------------------------------------------------
+
+Categories of Scheduling:
+
+Non-Preemptive: In this case, a process’s resource cannot be taken before the process has finished running.
+
+Preemptive: In this case, the OS assigns resources to a process for a predetermined period.
+
+-------------------------------------------------------------------------
+
+Types of Process Schedulers:
+
+1. Long Term or Job Scheduler:- It brings the new process to the ‘Ready State’.
+
+2. Short-Term or CPU Scheduler:- It is responsible for selecting one process from the ready state for scheduling it on the running state. Here is when all the scheduling algorithms are used. The CPU scheduler is responsible for ensuring no starvation due to high burst time processes.
+- The dispatcher is responsible for loading the process selected by the Short-term scheduler on the CPU (Ready to Running State) Context switching is done by the dispatcher only. 
+
+3. Medium-Term Scheduler:- It is responsible for suspending and resuming the process. It mainly does swapping. 
+
+4: I/O Schedulers: I/O schedulers are in charge of managing the execution of I/O operations such as reading and writing to discs or networks. They can use various algorithms to determine the order in which I/O operations are executed, such as FCFS (First-Come, First-Served) or RR (Round Robin).
+
+5: Real-Time Schedulers: In real-time systems, real-time schedulers ensure that critical tasks are completed within a specified time frame. They can prioritize and schedule tasks using various algorithms such as EDF (Earliest Deadline First) or RM (Rate Monotonic).
+
+-------------------------------------------------------------------------
+
+Two-State Process Model Short-Term:
+- The terms “running” and “non-running” states are used to describe the two-state process model.
+
+1: Running: A newly created process joins the system in a running state when it is created. 
+
+2: Not Running: Processes that are not currently running are kept in a queue and await execution. A pointer to a specific process is contained in each entry in the queue. Linked lists are used to implement the queue system.
+
+
+
+
+
+
+
+
+
+
+
+
+
