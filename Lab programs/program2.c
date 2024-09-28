@@ -29,6 +29,7 @@ int main() {
                 sum_even += i;
             }
         }
+        wait(NULL);
         printf("parent process: sum of even numbers = %d\n",sum_even);
     }
 
